@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-bar-body">
+        <ul>
+            <p>X_MD_13</p>
+            <li><img src="home.png" alt="">Acceuil</li>
+            <li><img src="searching (1).png" alt="">Search</li>
+            <li><img src="Settings.png" alt="">Settings</li>
+            <li><img src="user.png" alt="">Account</li>
+            <li><img src="notification-bell.png" alt="">Notification</li>
+            <li><img src="Account.png" alt="">Login</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script>
+    let items = document.querySelectorAll('li');
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            items.forEach(item => item.classList.remove('active'))
+            item.classList.add('active')
+        })
+    });
+</script>
